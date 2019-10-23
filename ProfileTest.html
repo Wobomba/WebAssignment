@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="ProfileTest.css">
+<title>Wobomba Isaac Newton</title>
+</head>
+<body>
+	<div class="hob">
+        <img src="me.jpg" width="200px" border-radius="50%">
+		<p><strong>WOBOMBA Isaac Newton</strong></p>
+	</div>
+
+<div class="Gallery">
+<strong>Gallery And Nice Moments</strong>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="hanna.jpg" style="width:100%">
+  <div class="text">Home</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="Chess.jpg" style="width:100%">
+  <div class="text">Chess Tournament at Namboole National Stadium</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="Rose.jpg" style="width:100%">
+  <div class="text">Graduation Party</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 5000); // Change image every 5 seconds
+}
+</script>
+</div>
+
+<div class="ContactMe">
+	<p>You can send me a message and l will respond to you as soon as possible</p>
+	<small><strong>Contact Information</small></strong>
+	<p>0787295863</p>
+	<p>0797323400</p>
+	<p>iwobomba999@gmail.com</p>
+</div>
+
+
+<div class="About">
+			<strong>Interests</strong>
+			<p class="first">My interests are all these below.</p>
+			<ul class="Interests">
+			<li>Software Engineering     
+				<progress value="75" max="100"> </progress> 75%
+            </li>
+			<li>Data science   
+			 <progress value="15" max="100"> </progress> 15% 
+			</li>
+			<li>Machine Learning
+				<progress value="20" max="100"> </progress> 20%
+			</li>
+			<li>Deep Learning 
+
+			<progress value="20" max="100"> </progress> 20% 
+			</li>
+			<li>Artificial Intelligence
+				<progress value="20" max="100"> </progress> 20%
+			</li>
+			</ul>
+</div>	
+
+
+</body>
+</html> 
